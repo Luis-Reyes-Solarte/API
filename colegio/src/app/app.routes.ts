@@ -8,7 +8,7 @@ export const routes: Routes = [
 
     {
 
-        path: 'cosulta',
+        path: 'consulta',
         component: ConsultaComponent
     
     },

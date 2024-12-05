@@ -1,10 +1,11 @@
+<p>holaaaaaaaaaaaaaaaaaaaaaaaa</p>
 <div class="filter-users-container">
-    <h2>Buscar Usuario por ID</h2>
+    <h2>Buscar estudiante por codigo</h2>
     <div class="filter-form">
       <input 
         pInputText
         type="text"
-        placeholder="Ingresa el ID del usuario"
+        placeholder="Ingresa el codigo del usuario"
         [(ngModel)]="codigo"
       />
       <button 
@@ -29,9 +30,9 @@
     >
       <ng-template pTemplate="header">
         <tr>
-          <th>ID</th>
+          <th>codigo</th>
           <th>Nombre</th>
-          <th>Email</th>
+          <th>cedula</th>
           <th>Acciones</th>
         </tr>
       </ng-template>
@@ -39,7 +40,7 @@
         <tr>
           <td>{{ user.id }}</td>
           <td>{{ user.nombre }}</td>
-          <td>{{ user.email }}</td>
+          <td>{{ user.cedula }}</td>
           <td>
             <button 
               pButton 
@@ -62,5 +63,5 @@
     <p *ngIf="!estudiante.length && !errorMessage" class="no-results">
       No se encontraron usuarios.
     </p>
-  </div>
+</div>
   

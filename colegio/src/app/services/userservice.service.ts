@@ -15,25 +15,25 @@ export class UserserviceService {
  // y se utilizan principalmente para manejar eventos o flujos de datos que pueden ocurrir en el futuro, 
  // como respuestas de peticiones HTTP, eventos del usuario - se controla con HttpClientModule
 
- login(username: string, password:string):Observable<any>{
-   const body = { username, password };
-   return this.http.post(`${this.apiUrl}/login`,{username, password});
+ login(username: string, cedula:string):Observable<any>{
+   const body = { username, cedula };
+   return this.http.post(`${this.apiUrl}/login`,{username, cedula});
 
    //return this.http.post('${this.apiUrl}/login', {username, password})
 
  }
 
- register(username:string, password:string):Observable<any> {
-   const body = { username, password };
-   return this.http.post(`${this.apiUrl}/register`,{username, password});
+ register(username:string, cedula:string):Observable<any> {
+   const body = { username, cedula };
+   return this.http.post(`${this.apiUrl}/register`,{username, cedula});
  }
 
  deleteUser (id: string): Observable<any> {
    return this.http.delete(`${this.apiUrl}/delete/${id}`);
  }
 
- update(Id: string, username: string, password: string): Observable<any> {
-   const body = { username, password };
+ update(Id: string, username: string, cedula: string): Observable<any> {
+   const body = { username, cedula };
    return this.http.put(`${this.apiUrl}/update/${Id}`, body);
 }
 
@@ -42,7 +42,7 @@ getUsers (): Observable<any[]> {
  return this.http.get<any[]>(`${this.apiUrl}/getusers`);
 }
 //Obtener usuario por su Id
-getUserById(userId: string): Observable<any> {
- return this.http.get<any>(`${this.apiUrl}/getUserById/${userId}`);
+getUserById(codigo: string): Observable<any> {
+ return this.http.get<any>(`${this.apiUrl}/getUserById/${codigo}`);
 }
 }
