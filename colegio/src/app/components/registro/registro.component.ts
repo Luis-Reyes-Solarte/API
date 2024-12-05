@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule,FormGroup,FormBuilder, Validators } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
   imports: [CommonModule,ReactiveFormsModule,ButtonModule,
-  InputTextModule],
+  InputTextModule,CardModule],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })

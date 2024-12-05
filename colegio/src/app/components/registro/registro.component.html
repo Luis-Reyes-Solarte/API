@@ -1,19 +1,21 @@
-<div class="p-fluid">
+<div class="p-fluid" >
     <form [formGroup]="registroForm">
+        <p-card header="Registro de estudiante" [style]="{width:'360px'}">
     <div class="p-field">
-        <label for="username">user</label>
+        <label for="username">Nombre estudiante</label>
         <input id="username" type="username" pInputText formControlName="username" />
         <div *ngIf="registroForm.controls['username'].invalid && registroForm.controls['username'].touched" class="error">
         Usuario no valido
         </div>
     </div>
     <div class="p-field">
-        <label for="cedula">Contraseña</label>
-        <input id="cedula" type="cedula" pcedula formControlName="cedula" />
+        <label for="cedula">Cédula del estudiante</label>
+        <input id="cedula" type="cedula" pInputText formControlName="cedula" />
         <div *ngIf="registroForm.controls['cedula'].invalid && registroForm.controls['cedula'].touched" class="error">
         Cédula no valida
         </div>
     </div>
     <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid"></button>
-    </form>
+        </p-card>
+</form>
 </div>
