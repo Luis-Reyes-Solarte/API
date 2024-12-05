@@ -3,3 +3,8 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 @import 'primeflex/primeflex.scss';
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
