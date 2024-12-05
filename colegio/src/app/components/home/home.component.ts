@@ -18,21 +18,18 @@ export class HomeComponent {
             {
                 label: 'Consulta',
                 icon: 'pi pi-search',
-                
+                routerLink: '/consulta'
             },  
             {
                 label: 'Listado',
-                icon: 'pi pi-star'
+                icon: 'pi pi-star',
+                routerLink: '/listado'
             },
             {
                 label: 'Registro',
                 icon: 'pi pi-book',
                 routerLink: '/registro'
             },
-            {
-                label: 'Contact',
-                icon: 'pi pi-envelope'
-            }
         ]
     }
 }
