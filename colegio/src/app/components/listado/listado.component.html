@@ -1,1 +1,24 @@
-<p>listado works!</p>
+<p-table [value]="users"[paginator]="true"[rows]="5"[responsiveLayout]="'scroll'">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>codigo</th>
+            <th>Usuario</th>
+            <th>cedula</th>
+            <th>Acciones</th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.cedula}}</td>
+            <td>
+                <button pButton type="button" label="Editar" class="p-button-sm p-button-warning" ></button>
+                <button pButton type="button" label="Eliminar" class="p-button-sm p-button-danger"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+ 
+<p>no se si funcione, creo q si, debemos probar ya con la base</p>
