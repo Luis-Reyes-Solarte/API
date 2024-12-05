@@ -11,7 +11,8 @@ import { UserserviceService } from '../../services/userservice.service';
   standalone: true,
   imports: [TableModule, ButtonModule, InputTextModule,HttpClientModule, CommonModule, FormsModule, ReactiveFormsModule ],
   templateUrl: './consulta.component.html',
-  styleUrls: ['./consulta.component.css']
+  providers: [ UserserviceService ],
+  styleUrl: './consulta.component.css'
 })
 export class ConsultaComponent {
 
