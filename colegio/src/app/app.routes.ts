@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ConsultaComponent } from './components/consulta/consulta.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
 
