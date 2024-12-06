@@ -1,30 +1,27 @@
-<div class="p-fluid" >
-    <form [formGroup]="registroForm">
-        <p-card header="Registro de estudiante" [style]="{width:'360px'}">
-    <div class="p-field">
+<form [formGroup]="registroForm">
+    <p-card header="Registro de estudiante" [style]="{width:'360px'}">
+      <div class="p-field">
         <label for="username">Nombre estudiante</label>
-        <input id="username" type="username" pInputText formControlName="username" />
+        <input id="username" type="text" pInputText formControlName="username" />
         <div *ngIf="registroForm.controls['username'].invalid && registroForm.controls['username'].touched" class="error">
-        Usuario no valido
+          Usuario no válido
         </div>
-    </div>
-    <div class="p-field">
+      </div>
+      <div class="p-field">
         <label for="cedula">Cédula del estudiante</label>
-        <input id="cedula" type="number" pInputText formControlName="cedula" min="0"/>
+        <input id="cedula" type="number" pInputText formControlName="cedula" min="0" />
         <div *ngIf="registroForm.controls['cedula'].invalid && registroForm.controls['cedula'].touched" class="error">
-        Cédula no válida
+          Cédula no válida
         </div>
-    </div>
-    <div class="p-field">
+      </div>
+      <div class="p-field">
         <label for="codigo">Código del estudiante</label>
-        <input id="codigo" type="number" pInputText formControlName="codigo" min="0"/>
+        <input id="codigo" type="number" pInputText formControlName="codigo" min="0" />
         <div *ngIf="registroForm.controls['codigo'].invalid && registroForm.controls['codigo'].touched" class="error">
-        Código no válido
+          Código no válido
         </div>
-    </div>
-    <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid"
-    (click)="realizar_registro()"
-    ></button>
-        </p-card>
-</form>
-</div>
+      </div>
+      <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid" (click)="realizar_registro()"></button>
+    </p-card>
+  </form>
+  

@@ -1,62 +1,93 @@
 <div class="filter-users-container">
-    <h2>Buscar estudiante por codigo</h2>
-    <div class="filter-form">
-      <input 
-        pInputText
-        type="text"
-        placeholder="Ingresa el codigo del estudiante"
-        [(ngModel)]="codigo"
-      />
-      <button 
-        pButton 
-        type="button"
-        label="Buscar"
-        (click)="searchUserById()"
-        [disabled]="isLoading"
-      ></button>
-    </div>
-  
-    <!-- Mensaje de error -->
-    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
-  
-    <!-- Tabla de resultados -->
-    <p-table
-      *ngIf="estudiante.length"
-      [value]="estudiante"
-      [paginator]="true"
-      [rows]="5"
-      [responsiveLayout]="'scroll'"
-    >
-      <ng-template pTemplate="header">
-        <tr>
-          <th>codigo</th>
-          <th>Nombre</th>
-          <th>cedula</th>
-          <th>Acciones</th>
-        </tr>
-      </ng-template>
-      <ng-template pTemplate="body" let-user>
-        <tr>
-          <td>{{ user.codigo }}</td>
-          <td>{{ user.nombre }}</td>
-          <td>{{ user.cedula }}</td>
-          <td>
-            <button 
-              pButton 
-              type="button" 
-              label="Editar" 
-              class="p-button-sm p-button-warning">
-            </button>
-            <button 
-              pButton 
-              type="button" 
-              label="Eliminar" 
-              class="p-button-sm p-button-danger">
-            </button>
-          </td>
-        </tr>
-      </ng-template>
-    </p-table>
+  <h2>Buscar estudiante por código</h2>
+  <div class="filter-form">
+    <input 
+      pInputText 
+      type="text" 
+      placeholder="Ingresa el código del estudiante" 
+      [(ngModel)]="codigo" 
+    />
+    <button 
+      pButton 
+      type="button" 
+      label="Buscar" 
+      (click)="searchUserById()" 
+      [disabled]="isLoading"
+    ></button>
+  </div>
 
+  <!-- Mensaje de error -->
+  <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+  <!-- Tabla de resultados -->
+  <p-table *ngIf="estudiante.length" [value]="estudiante" [paginator]="true" [rows]="5" [responsiveLayout]="'scroll'">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>codigo</th>
+        <th>Nombre</th>
+        <th>cedula</th>
+        <th>Acciones</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+      <tr>
+        <td>{{ user.codigo }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.cedula }}</td>
+        <td>
+          <button 
+            pButton 
+            type="button" 
+            label="Editar" 
+            class="p-button-sm p-button-warning"
+            (click)="editUser(user)">
+          </button>
+          <button 
+            pButton 
+            type="button" 
+            label="Eliminar" 
+            class="p-button-sm p-button-danger"
+            (click)="deleteUserWithConfirmation(user.id)">
+          </button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <!-- Formulario de edición -->
+  <div *ngIf="selectedUser" class="edit-form">
+    <h3>Editar estudiante</h3>
+    <div>
+      <label for="username">Nombre:</label>
+      <input 
+        pInputText 
+        [(ngModel)]="selectedUser.username" 
+        id="username"
+        placeholder="Nombre del estudiante"
+      />
+    </div>
+    <div>
+      <label for="cedula">Cédula:</label>
+      <input 
+        pInputText 
+        [(ngModel)]="selectedUser.cedula" 
+        id="cedula"
+        placeholder="Cédula del estudiante"
+      />
+    </div>
+    <button 
+      pButton 
+      type="button" 
+      label="Guardar" 
+      class="p-button-sm p-button-success"
+      (click)="saveUser()">
+    </button>
+    <button 
+      pButton 
+      type="button" 
+      label="Cancelar" 
+      class="p-button-sm p-button-secondary"
+      (click)="cancelEdit()">
+    </button>
+  </div>
 </div>
-  

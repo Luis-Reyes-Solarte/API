@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "colegio.Controllers.ValuesController",
-    "Method": "Delete",
+    "Method": "DeleteUserById",
     "RelativePath": "api/Values/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "Colegio.Users",
+        "Type": "API_front.Users",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
       },
       {
         "Name": "user",
-        "Type": "Colegio.Users",
+        "Type": "API_front.Users",
         "IsRequired": true
       }
     ],

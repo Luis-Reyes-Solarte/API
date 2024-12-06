@@ -9,3 +9,20 @@ body{
     height: 100%;
     margin:0;
 }
+.edit-form {
+    margin-top: 20px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .edit-form input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .edit-form button {
+    margin-right: 10px;
+  }

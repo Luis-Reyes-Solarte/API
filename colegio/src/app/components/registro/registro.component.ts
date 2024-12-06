@@ -13,6 +13,7 @@ import { UserserviceService } from '../../services/userservice.service';
   imports: [CommonModule,ReactiveFormsModule,ButtonModule,
   InputTextModule,CardModule],
   templateUrl: './registro.component.html',
+  providers: [ UserserviceService ],
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
@@ -28,8 +29,14 @@ export class RegistroComponent {
   };
 
   realizar_registro(): void {
-    const {username, cedula, codigo} = this.registroForm.value;
-    this.Userservice.register(username, cedula, codigo).subscribe({});
+    const { username, cedula, codigo } = this.registroForm.value;
+  
+    this.Userservice.register(username, cedula, codigo)
+      .subscribe({
+        next: response => console.log('Registro exitoso!', response),
+        error: error => console.error('Detalles del error:', error.error) // Mostrar errores detallados
+      });
   }
+  
 
 }

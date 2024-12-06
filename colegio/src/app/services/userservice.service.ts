@@ -27,13 +27,14 @@ export class UserserviceService {
    return this.http.post(`${this.apiUrl}/register`,{username, cedula, codigo});
  }
 
- deleteUser (id: string): Observable<any> {
-   return this.http.delete(`${this.apiUrl}/delete/${id}`);
- }
+ deleteUser(id: string): Observable<any> {
+  return this.http.delete(`${this.apiUrl}/delete/${id}`);
+}
 
- update(Id: string, username: string, cedula: string): Observable<any> {
-   const body = { username, cedula };
-   return this.http.put(`${this.apiUrl}/update/${Id}`, body);
+
+
+updateUser(id: number, updatedUser: any): Observable<any> {
+  return this.http.put(`${this.apiUrl}/update/${id}`, updatedUser);
 }
 
  
@@ -41,8 +42,8 @@ getUsers (): Observable<any[]> {
  return this.http.get<any[]>(`${this.apiUrl}/getusers`);
 }
 //Obtener usuario por su codigo
-getUserById(codigo: string): Observable<any> {
-  return this.http.get<any>(`${this.apiUrl}/getUserById/${codigo}`);
+getUserById(codigo: string): Observable<any[]> {
+  return this.http.get<any[]>(`${this.apiUrl}/getUserById/${codigo}`);
 }
 
 }

@@ -1,10 +1,10 @@
-namespace Colegio
+namespace API_front
 {
   public class Users
   {
-    public int id { get; set; }
-    public string username {  get; set; }
+    public int Id { get; set; }
+    public string username { get; set; }
     public string cedula { get; set; }
-    public string codigo { get; set; }
+    public string codigo { get; set; } 
   }
 }

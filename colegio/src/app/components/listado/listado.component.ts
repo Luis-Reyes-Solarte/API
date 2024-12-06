@@ -14,8 +14,8 @@ import { UserserviceService } from '../../services/userservice.service';  // Ase
   styleUrl: './listado.component.css'
 })
 export class ListadoComponent {
-  users: any[] = [];  // Almacena los usuarios.
-  errorMessage: string = '';  // Mensaje de error si la carga falla.
+  users: any[] = []; 
+  errorMessage: string = ''; 
 
   constructor(private userservice: UserserviceService) {
     this.loadUsers();  // Cargar usuarios al iniciar el componente
