@@ -30,11 +30,6 @@ export class HomeComponent {
                 icon: 'pi pi-book',
                 routerLink: '/registro'
             },
-            {
-                label: 'Búsqueda por nombre',
-                icon: 'pi pi-user',
-                routerLink: '/busquedanombre'
-            },
         ]
     }
 }

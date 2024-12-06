@@ -4,7 +4,6 @@ import { ConsultaComponent } from './components/consulta/consulta.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { HomeComponent } from './components/home/home.component';
-import { BusquedaNombreComponent } from './components/busqueda-nombre/busqueda-nombre.component';
 
 export const routes: Routes = [
 
@@ -27,8 +26,4 @@ export const routes: Routes = [
         component: RegistroComponent
     
     },
-    {
-        path: 'busquedanombre',
-        component: BusquedaNombreComponent
-    }
 ];
