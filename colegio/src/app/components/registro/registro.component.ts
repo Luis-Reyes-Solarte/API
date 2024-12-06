@@ -29,7 +29,17 @@ export class RegistroComponent {
 
   realizar_registro(): void {
     const {username, cedula, codigo} = this.registroForm.value;
-    this.Userservice.register(username, cedula, codigo).subscribe({});
+    this.Userservice.register(username, cedula, codigo).subscribe({
+      next: (response) => {
+        console.log("Información enviada Exitosamente", response);
+      },
+      error: error =>{
+        console.log("Error al enviar información", error);
+      },
+      complete:() => {
+        console.log("Envío de información completado");
+      },
+    });
   }
 
 }
