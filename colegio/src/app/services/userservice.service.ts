@@ -15,6 +15,14 @@ export class UserserviceService {
  // y se utilizan principalmente para manejar eventos o flujos de datos que pueden ocurrir en el futuro, 
  // como respuestas de peticiones HTTP, eventos del usuario - se controla con HttpClientModule
 
+ login(username: string, cedula:string):Observable<any>{
+   const body = { username, cedula };
+   return this.http.post(`${this.apiUrl}/login`,{username, cedula});
+
+   //return this.http.post('${this.apiUrl}/login', {username, password})
+
+ }
+
  register(username:string, cedula:string, codigo:string):Observable<any> {
    return this.http.post(`${this.apiUrl}/register`,{username, cedula, codigo});
  }
@@ -27,12 +35,6 @@ export class UserserviceService {
 
 updateUser(id: number, updatedUser: any): Observable<any> {
   return this.http.put(`${this.apiUrl}/update/${id}`, updatedUser);
- }
-
- update(username: string, cedula: string,codigo:string): Observable<any> {
-   const body = { username, cedula };
-   return this.http.put(`${this.apiUrl}/update/${codigo}`, body);
-
 }
 
  
