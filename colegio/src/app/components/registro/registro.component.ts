@@ -12,14 +12,13 @@ import { UserserviceService } from '../../services/userservice.service';
   imports: [CommonModule,ReactiveFormsModule,ButtonModule,
   InputTextModule,CardModule],
   templateUrl: './registro.component.html',
-  providers: [ UserserviceService ],
   styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
 
   registroForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private UserserviceService: UserserviceService){
+  constructor(private fb: FormBuilder, private Userservice: UserserviceService){
     this.registroForm = this.fb.group({
       username: ['', Validators.required],
       cedula: ['',[Validators.required]],
@@ -29,7 +28,7 @@ export class RegistroComponent {
 
   realizar_registro(): void {
     const {username, cedula, codigo} = this.registroForm.value;
-    this.UserserviceService.register(username, cedula, codigo);
+    this.Userservice.register(username, cedula, codigo).subscribe({});
   }
 
 }

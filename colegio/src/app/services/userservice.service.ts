@@ -24,7 +24,6 @@ export class UserserviceService {
  }
 
  register(username:string, cedula:string, codigo:string):Observable<any> {
-   const body = { username, cedula, codigo };
    return this.http.post(`${this.apiUrl}/register`,{username, cedula, codigo});
  }
 
