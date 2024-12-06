@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class UserserviceService {
  //Url del API almacenada de forma privada
- apiUrl= "https://localhost:7059/api/Users";
+ apiUrl= "https://localhost:7007/api/Values";
 
  constructor(private http: HttpClient) { }
 

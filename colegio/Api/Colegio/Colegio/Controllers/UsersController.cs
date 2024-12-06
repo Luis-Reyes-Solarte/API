@@ -78,15 +78,15 @@ namespace colegio.Controllers
       }
     }
 
-    [HttpGet("getUserById/{id}")]
-    public IActionResult GetUserById(int id)
+    [HttpGet("getUserById/{codigo}")]
+    public IActionResult GetUserById(string codigo)
     {
       using (var connection = new SqlConnection(_connectionString))
       {
-        var sql = "SELECT * FROM estudiantes WHERE id = @Id";
-        var user = connection.QuerySingleOrDefault<Users>(sql, new { Id = id });
+        var sql = "SELECT * FROM estudiantes WHERE codigo = @Codigo";
+        var user = connection.QuerySingleOrDefault<Users>(sql, new { Codigo = codigo });
 
-        return user != null ? Ok(user) : NotFound($"User with ID {id} not found.");
+        return user != null ? Ok(user) : NotFound($"User with Codigo {codigo} not found.");
       }
     }
   }
