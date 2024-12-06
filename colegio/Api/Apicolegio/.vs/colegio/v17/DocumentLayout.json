@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\",
+  "WorkspaceRootPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F16429B6-0B02-4DFB-A3A2-ADF10DA64E86}|colegio.csproj|c:\\users\\daniel trujillo\\source\\repos\\colegio\\controllers\\colegiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F16429B6-0B02-4DFB-A3A2-ADF10DA64E86}|colegio.csproj|a:\\trabajos\\trabajo_cg\\colegio\\api\\apicolegio\\controllers\\colegiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16429B6-0B02-4DFB-A3A2-ADF10DA64E86}|colegio.csproj|solutionrelative:controllers\\colegiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16429B6-0B02-4DFB-A3A2-ADF10DA64E86}|colegio.csproj|c:\\users\\daniel trujillo\\source\\repos\\colegio\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16429B6-0B02-4DFB-A3A2-ADF10DA64E86}|colegio.csproj|solutionrelative:users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\Users.cs",
-              "RelativeDocumentMoniker": "Users.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\Users.cs",
-              "RelativeToolTip": "Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T23:16:59.179Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "colegioController.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\Controllers\\colegioController.cs",
+              "DocumentMoniker": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\Controllers\\colegioController.cs",
               "RelativeDocumentMoniker": "Controllers\\colegioController.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\Controllers\\colegioController.cs",
+              "ToolTip": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\Controllers\\colegioController.cs",
               "RelativeToolTip": "Controllers\\colegioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T23:13:26.005Z",
+              "WhenOpened": "2024-12-06T02:46:52.732Z",
               "EditorCaption": ""
             }
           ]
