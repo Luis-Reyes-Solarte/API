@@ -6,11 +6,12 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { UserserviceService } from '../../services/userservice.service';
 import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ButtonModule, InputTextModule, CardModule],
+  imports: [CommonModule, ReactiveFormsModule, ButtonModule, InputTextModule, CardModule,ToastModule],
   templateUrl: './registro.component.html',
   providers: [UserserviceService,MessageService],
   styleUrls: ['./registro.component.css']
