@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\colegio.csproj": {}
+    "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\colegio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\colegio.csproj": {
+    "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\colegio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\colegio.csproj",
+        "projectUniqueName": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\colegio.csproj",
         "projectName": "colegio",
-        "projectPath": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\colegio.csproj",
-        "packagesPath": "C:\\Users\\Daniel Trujillo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Trujillo\\source\\repos\\colegio\\obj\\",
+        "projectPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\colegio.csproj",
+        "packagesPath": "C:\\Users\\Luis Reyes\\.nuget\\packages\\",
+        "outputPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Apicolegio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daniel Trujillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis Reyes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
