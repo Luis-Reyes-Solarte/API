@@ -5,20 +5,21 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { UserserviceService } from '../../services/userservice.service';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, ButtonModule, InputTextModule, CardModule],
   templateUrl: './registro.component.html',
-  providers: [UserserviceService],
+  providers: [UserserviceService,MessageService],
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
 
   registroForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private Userservice: UserserviceService) {
+  constructor(private fb: FormBuilder, private Userservice: UserserviceService, private messageService: MessageService) {
     this.registroForm = this.fb.group({
       username: ['', Validators.required],
       cedula: ['', [Validators.required, Validators.pattern("^[0-9]*$")]],
@@ -48,5 +49,10 @@ export class RegistroComponent {
         this.registroForm.reset(); // Limpiar el formulario después del registro
       },
     });
+    this.messageService.add({severity: 'success', summary: '¡Registro exitoso!', detail: 'El usuario se registró correctamente.'});
+    // Recargar la página después de unos segundos
+    setTimeout(() => {
+      location.reload(); // Recargar la página
+    }, 3000); // 2 segundos de espera antes de recargar
   }
 }
