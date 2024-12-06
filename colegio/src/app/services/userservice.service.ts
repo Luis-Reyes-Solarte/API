@@ -45,5 +45,7 @@ getUsers (): Observable<any[]> {
 getUserById(codigo: string): Observable<any[]> {
   return this.http.get<any[]>(`${this.apiUrl}/getUserById/${codigo}`);
 }
-
+GetUsersbyName(username: string): Observable<any[]> {
+  return this.http.get<any[]>(`${this.apiUrl}/getUsersbyName`, username);
+}
 }

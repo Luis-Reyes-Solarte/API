@@ -97,5 +97,17 @@ namespace colegio.Controllers
         return Ok(users); // Devuelve una lista si hay varios resultados.
       }
     }
+    // Obtener todos los usuarios
+    [HttpGet("getUsersbyName")]
+    public IActionResult GetUsersbyName(string nombre)
+    {
+      using (var connection = new SqlConnection(_connectionString))
+      {
+        var sql = "SELECT * FROM estudiantes where username LIKE @Nombre + '%'";
+        var users = connection.Query<Users>(sql, new {Nombre = nombre}).ToList();
+
+        return users.Any() ? Ok(users) : NotFound("No users found.");
+      }
+    }
   }
 }
