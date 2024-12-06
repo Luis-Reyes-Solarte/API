@@ -10,9 +10,16 @@
     </div>
     <div class="p-field">
         <label for="cedula">Cédula del estudiante</label>
-        <input id="cedula" type="cedula" pInputText formControlName="cedula" />
+        <input id="cedula" type="number" pInputText formControlName="cedula" min="0"/>
         <div *ngIf="registroForm.controls['cedula'].invalid && registroForm.controls['cedula'].touched" class="error">
-        Cédula no valida
+        Cédula no válida
+        </div>
+    </div>
+    <div class="p-field">
+        <label for="codigo">Código del estudiante</label>
+        <input id="codigo" type="number" pInputText formControlName="codigo" min="0"/>
+        <div *ngIf="registroForm.controls['codigo'].invalid && registroForm.controls['codigo'].touched" class="error">
+        Código no válido
         </div>
     </div>
     <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid"></button>

@@ -20,7 +20,8 @@ export class RegistroComponent {
   constructor(private fb: FormBuilder){
     this.registroForm = this.fb.group({
       username: ['', Validators.required],
-      cedula: ['',[Validators.required]]
+      cedula: ['',[Validators.required]],
+      codigo: ['',[Validators.required]],
     })
   };
 }
