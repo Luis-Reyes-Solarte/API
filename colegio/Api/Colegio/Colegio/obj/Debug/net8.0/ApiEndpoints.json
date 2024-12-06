@@ -18,14 +18,14 @@
   {
     "ContainingType": "colegio.Controllers.ValuesController",
     "Method": "GetUserById",
-    "RelativePath": "api/Values/getUserById/{id}",
+    "RelativePath": "api/Values/getUserById/{codigo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "codigo",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

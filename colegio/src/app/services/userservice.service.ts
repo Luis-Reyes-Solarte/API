@@ -41,8 +41,9 @@ export class UserserviceService {
 getUsers (): Observable<any[]> {
  return this.http.get<any[]>(`${this.apiUrl}/getusers`);
 }
-//Obtener usuario por su Id
+//Obtener usuario por su codigo
 getUserById(codigo: string): Observable<any> {
- return this.http.get<any>(`${this.apiUrl}/getUserById/${codigo}`);
+  return this.http.get<any>(`${this.apiUrl}/getUserById/${codigo}`);
 }
+
 }

@@ -6,6 +6,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { UserserviceService } from '../../services/userservice.service';
 
+
 @Component({
   selector: 'app-registro',
   standalone: true,

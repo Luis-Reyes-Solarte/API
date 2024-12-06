@@ -36,7 +36,8 @@ export class ConsultaComponent {
         this.estudiante = user ? [user] : [];
         this.errorMessage = this.estudiante.length ? '' : 'No se encontró ningún estudiante con este codigo.';
       },
-      error: () => {
+      error: (err) => {
+        console.error('Error en la consulta', err);
         this.errorMessage = 'Error al buscar el estudiante.';
         this.estudiante = [];
       },
@@ -45,5 +46,6 @@ export class ConsultaComponent {
       },
     });
   }
+  
 
 }
