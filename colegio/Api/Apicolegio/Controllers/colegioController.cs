@@ -21,7 +21,7 @@ namespace colegio.Controllers
 
       using (var connection = new SqlConnection(_connectionString))
       {
-        var sql = "INSERT INTO Users (Username, Password) VALUES (@Username, @Password)";
+        var sql = "INSERT INTO Users (username, cedula, codigo) VALUES (@username, @cedula, @codigo)";
         var rowsAffected = connection.Execute(sql, new { user.username, user.cedula, user.codigo });
 
         if (rowsAffected > 0)
