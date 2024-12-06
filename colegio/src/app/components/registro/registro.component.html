@@ -22,7 +22,9 @@
         Código no válido
         </div>
     </div>
-    <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid"></button>
+    <button pButton type="submit" label="Registrar" [disabled]="registroForm.invalid"
+    (click)="realizar_registro()"
+    ></button>
         </p-card>
 </form>
 </div>
