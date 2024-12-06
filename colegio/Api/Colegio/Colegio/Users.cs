@@ -3,8 +3,8 @@ namespace API_front
   public class Users
   {
     public int Id { get; set; }
-    public string username { get; set; }
-    public string cedula { get; set; }
-    public string codigo { get; set; } 
+    public string Username { get; set; }
+    public string Cedula { get; set; }
+    public string Codigo { get; set; } 
   }
 }

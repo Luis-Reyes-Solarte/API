@@ -10,23 +10,21 @@ namespace colegio.Controllers
   [ApiController]
   public class ValuesController : ControllerBase
   {
-    private readonly string _connectionString = "Server=LAPTOP-TQ7JM6QV\\MSSQLSERVER01;Database=Bdfinal;User Id=sa;Password=12345678;TrustServerCertificate=true";
+    private readonly string _connectionString = "Server=DESKTOP-P8BDAI4;Database=Bdfinal;User Id=sa;Password=12345678;TrustServerCertificate=true";
 
     // Registrar usuario
     [HttpPost("register")]
     public IActionResult Register([FromBody] Users user)
     {
-      if (user == null || string.IsNullOrWhiteSpace(user.username) ||
-          string.IsNullOrWhiteSpace(user.cedula) ||
-          string.IsNullOrWhiteSpace(user.codigo))
+      if (user == null)
       {
         return BadRequest("Invalid user data.");
       }
 
       using (var connection = new SqlConnection(_connectionString))
       {
-        var sql = "INSERT INTO estudiantes (username, cedula, codigo) VALUES (@Username, @Cedula, @Codigo)";
-        var rowsAffected = connection.Execute(sql, new { user.username, user.cedula, user.codigo });
+        var sql = "INSERT INTO estudiantes (username, cedula, codigo) VALUES (@username, @cedula, @codigo)";
+        var rowsAffected = connection.Execute(sql, new { user.Username, user.Cedula, user.Codigo });
 
         return rowsAffected > 0 ? Ok("User registered successfully.") : StatusCode(500, "An error occurred while registering the user.");
       }
@@ -49,7 +47,7 @@ namespace colegio.Controllers
     [HttpPut("update/{id}")]
     public IActionResult Update(int id, [FromBody] Users user)
     {
-      if (user == null || string.IsNullOrWhiteSpace(user.username) || string.IsNullOrWhiteSpace(user.cedula))
+      if (user == null || string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Cedula))
       {
         return BadRequest("Invalid user data.");
       }
@@ -57,7 +55,7 @@ namespace colegio.Controllers
       using (var connection = new SqlConnection(_connectionString))
       {
         var sql = "UPDATE estudiantes SET username = @Username, cedula = @Cedula WHERE id = @Id";
-        var rowsAffected = connection.Execute(sql, new { Id = id, user.username, user.cedula });
+        var rowsAffected = connection.Execute(sql, new { Id = id, user.Username, user.Cedula });
 
         // Retorna un mensaje dependiendo de si se actualizó correctamente o no
         return rowsAffected > 0 ? Ok("User updated successfully.") : NotFound("User not found.");

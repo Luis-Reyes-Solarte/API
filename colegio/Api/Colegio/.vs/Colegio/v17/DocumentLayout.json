@@ -1,84 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|c:\\users\\daniel trujillo\\desktop\\final compu\\trabajo_cg\\colegio\\api\\colegio\\colegio\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|solutionrelative:colegio\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|c:\\users\\daniel trujillo\\desktop\\final compu\\trabajo_cg\\colegio\\api\\colegio\\colegio\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|solutionrelative:colegio\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|c:\\users\\daniel trujillo\\desktop\\final compu\\trabajo_cg\\colegio\\api\\colegio\\colegio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|solutionrelative:colegio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel Trujillo\\AppData\\Local\\SourceServer\\91d14fd0906474aca2805dc5d54bf0fedb85e04c4385bcc83c9b46c95c8eb3d1\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\AppData\\Local\\SourceServer\\91d14fd0906474aca2805dc5d54bf0fedb85e04c4385bcc83c9b46c95c8eb3d1\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\91d14fd0906474aca2805dc5d54bf0fedb85e04c4385bcc83c9b46c95c8eb3d1\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\AppData\\Local\\SourceServer\\91d14fd0906474aca2805dc5d54bf0fedb85e04c4385bcc83c9b46c95c8eb3d1\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\91d14fd0906474aca2805dc5d54bf0fedb85e04c4385bcc83c9b46c95c8eb3d1\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAhwBkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T05:04:54.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Colegio\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Colegio\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwD8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T03:56:49.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Users.cs",
-              "RelativeDocumentMoniker": "Colegio\\Users.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Users.cs",
-              "RelativeToolTip": "Colegio\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T03:56:41.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Program.cs",
-              "RelativeDocumentMoniker": "Colegio\\Program.cs",
-              "ToolTip": "C:\\Users\\Daniel Trujillo\\Desktop\\final compu\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Program.cs",
-              "RelativeToolTip": "Colegio\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T03:56:35.636Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
